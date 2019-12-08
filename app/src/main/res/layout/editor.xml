@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/navigation"
+        android:layout_height="0dp">
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5.0dip"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/russo_one"
+            android:gravity="center_horizontal"
+            android:text="PG3D Editor"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/jblue" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/russo_one"
+            android:gravity="center_horizontal"
+            android:text="Brought to you by Jbro129"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/jblue2" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5.0dip"
+            android:background="@android:color/transparent" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:background="@drawable/borderbackground"
+            android:orientation="vertical"
+            android:scrollbarSize="7.0dip"
+            android:layout_height="fill_parent">
+
+            <include
+                layout="@layout/content_editor"/>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+</android.support.constraint.ConstraintLayout>

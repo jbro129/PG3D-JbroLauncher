@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PG3D Mod Launcher</string>
+    <string name="copyright">PG3D Mod Launcher ©</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="bottom_sheet_behavior">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="launch_ver">PG3D 15.3.0 LAUNCHER</string>
+    <string name="credit">Made By Jbro129 And KMODs</string>
+    <string name="mainm">Main Menu</string>
+    <string name="support">Support</string>
+    <string name="points">JPoints</string>
+    <string name="editor">Editor</string>
+    <string name="title_send_feedback">Send</string>
+</resources>

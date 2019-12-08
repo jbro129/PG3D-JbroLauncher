@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/layoutbackground"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent" />
+
+        <EditText
+            android:id="@+id/regemail"
+            android:fontFamily="@font/russo_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:background="@android:color/transparent" />
+
+        <EditText
+            android:id="@+id/regpassword"
+            android:fontFamily="@font/russo_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:background="@android:color/transparent" />
+
+        <EditText
+            android:id="@+id/regpassword2"
+            android:fontFamily="@font/russo_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColor="@color/black" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/registernowbttn"
+            android:fontFamily="@font/russo_one"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/payborder"
+            android:text="Register" />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        
+		applicationId "com.jbro129.mod.pg3dlauncher"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 30
+        versionName "1530"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        android {
+            defaultConfig {
+                ndk {
+                    abiFilters "armeabi-v7a", "x86"
+                }
+            }
+            buildTypes {
+                release {
+                    useProguard false
+                    minifyEnabled false
+                    proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                            'proguard-rules.pro'
+                }
+                debug {
+                    useProguard false
+                    minifyEnabled false
+                    proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                            'proguard-rules.pro'
+                }
+            }
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    /*
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }
+    */
+    lintOptions {
+        //IJobService need NewApi
+        warning 'NewApi','OnClick'
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'org.zeroturnaround:zt-zip:1.12'
+    implementation 'com.github.apl-devs:appintro:v4.2.3'
+    implementation 'com.scottyab:aescrypt:0.0.1'
+    implementation 'com.github.tgio:rncryptor-native:0.0.9'
+    //implementation 'org.apache.commons:commons-lang3:3.4'
+    implementation 'lib.kashif:folderpicker:2.2'
+    implementation 'com.android.volley:volley:1.1.0'
+	
+    implementation project(':VA')
+}

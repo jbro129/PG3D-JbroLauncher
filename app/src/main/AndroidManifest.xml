@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jbro129.mod.pg3dlauncher">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application android:icon="@mipmap/jicon" android:label="@string/app_name" android:largeHeap="true" android:name="com.jbro129.mod.pg3dlauncher.VirtualApp" android:supportsRtl="true" android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:label="@string/app_name" android:name="com.jbro129.mod.pg3dlauncher.SplashAct" android:screenOrientation="portrait" android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.jbro129.mod.pg3dlauncher.MainActivity" android:screenOrientation="portrait" android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.jbro129.mod.pg3dlauncher.PointsActivity" android:screenOrientation="portrait" android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.jbro129.mod.pg3dlauncher.EditorActivity" android:screenOrientation="portrait" android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name="com.jbro129.mod.pg3dlauncher.IntroAct" android:screenOrientation="portrait" android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name="com.jbro129.mod.vending.RegisterActivity" android:screenOrientation="portrait" android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.jbro129.mod.vending.AccountActivity" android:screenOrientation="portrait" android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.jbro129.mod.pg3dlauncher.PurchaseActivity" android:screenOrientation="portrait" android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:theme="@style/AppTheme.NoActionBar"/>
+
+        <service android:enabled="true" android:exported="false" android:name="com.jbro129.mod.menu.FloatingActivity" android:theme="@style/Theme.AppCompat"/>
+
+    </application>
+
+</manifest>

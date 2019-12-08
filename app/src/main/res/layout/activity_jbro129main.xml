@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5.0dip"
+            android:background="@android:color/transparent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/launch_ver"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#ff3f51b5"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="And Mod Menu"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+android:id="@+id/credit"
+                android:text="@string/credit"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonborder"
+            android:fontFamily="@font/russo_one"
+            android:text="Check For Updates" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5.0dip"
+            android:background="@android:color/transparent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="400dp"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:scrollbarSize="7.0dip">
+
+                <include
+                    layout="@layout/content_jbro129main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="395dp" />
+            </ScrollView>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="18dp"
+            android:gravity="center"
+            android:text="┅┅┅┅┅ Pixel Gun Mod Launcher © ┅┅┅┅┅"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="569dp" />
+
+        <TextView
+            android:id="@+id/expires"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="JPoints: "
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            tools:ignore="NewApi" />
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+</android.support.constraint.ConstraintLayout>

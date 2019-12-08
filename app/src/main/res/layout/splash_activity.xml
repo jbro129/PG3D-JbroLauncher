@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:n2="http://schemas.android.com/tools"
+    n1:background="@drawable/background"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android"
+    n2:ignore="NamespaceTypo">
+
+    <ImageView
+        n1:id="@+id/splashimage"
+        n1:layout_width="125.0dip"
+        n1:layout_height="125.0dip"
+        n1:layout_above="@+id/txtAppName"
+        n1:layout_centerHorizontal="true"
+        n1:layout_marginBottom="14dp"
+        n1:src="@mipmap/jicon" />
+
+    <TextView
+        n1:id="@id/txtAppName"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_above="@+id/txtDeveloper"
+        n1:layout_centerHorizontal="true"
+        n1:layout_marginBottom="13dp"
+        n1:text="@string/app_name"
+        n1:textAppearance="?android:textAppearanceLarge"
+        n1:textColor="@color/colorPrimaryDark"
+        n1:textSize="30.0sp"
+        n2:targetApi="lollipop" />
+
+    <TextView
+        n1:id="@+id/txtDeveloper"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentBottom="true"
+        n1:layout_centerHorizontal="true"
+        n1:layout_marginBottom="200dp"
+        n1:text="By Jbro129"
+        n1:textColor="@color/opaque_black"
+        n1:textSize="16.0sp" />
+</RelativeLayout>

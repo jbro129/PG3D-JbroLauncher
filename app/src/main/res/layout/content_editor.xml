@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editor_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:fontFamily="@font/russo_one"
+            android:inputType="none"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/russo_one"
+            android:gravity="center_horizontal"
+            android:text="Input however long of a name as you want and then press the button below to apply the name. This will be you infinite name in PG3D. Setting name will cost 2 JPoints."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/editor_namebutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonborder"
+            android:fontFamily="@font/russo_one"
+            android:text="Apply Name (-2)" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="26.0dip"
+            android:background="@android:color/transparent" />
+
+        <EditText
+            android:id="@+id/editor_skin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/russo_one"
+            android:gravity="center_horizontal"
+            android:hint="Custom Skin File Path"
+            android:inputType="none"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/russo_one"
+            android:gravity="center_horizontal"
+            android:text="Select a minecraft skin that is in the old format. This skin will be added to your PG3D custom skins in game. Use 'http://old.minecraft.novaskin.me' to convert new-formatted skins to the old format. Adding skins will cost 5 JPoints."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/editor_skinbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonborder"
+            android:fontFamily="@font/russo_one"
+            android:text="Add Skin (-5)" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="26.0dip"
+            android:background="@android:color/transparent" />
+
+        <EditText
+            android:id="@+id/editor_cape"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/russo_one"
+            android:gravity="center_horizontal"
+            android:hint="Custom Cape File Path"
+            android:inputType="none"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/russo_one"
+            android:gravity="center_horizontal"
+            android:text="Select an image to set as your PG3D in-game custom cape."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/editor_capebutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonborder"
+            android:fontFamily="@font/russo_one"
+            android:text="Set Cape (BETA)" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="26.0dip"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/russo_one"
+            android:gravity="center_horizontal"
+            android:text="Backup PG3D Data For Future Use Even If The Launcher Is Uninstalled."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/editor_backup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonborder"
+            android:fontFamily="@font/russo_one"
+            android:text="Backup Data" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="26.0dip"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/russo_one"
+            android:gravity="center_horizontal"
+            android:text="Restore PG3D Data From An Earlier Backup."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/editor_restore"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonborder"
+            android:fontFamily="@font/russo_one"
+            android:text="Restore Data" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="26.0dip"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

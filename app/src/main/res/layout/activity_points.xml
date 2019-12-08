@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5.0dip"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/russo_one"
+                android:gravity="center_horizontal"
+                android:text="JPoints is the launcher currency so that this app stays free."
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/jblue" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/russo_one"
+                android:gravity="center_horizontal"
+                android:text="Every button that has a '(J)' and a negative number to the left of the J will cost that amount of JPoints to use."
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/jblue" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/russo_one"
+                android:gravity="center_horizontal"
+                android:text="You can only get JPoints one time every 1 hour."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/jblue2" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5.0dip"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="14.0dip"
+            android:background="@android:color/transparent" />
+
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5.0dip"
+                android:background="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/addpoints"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonborder"
+                android:fontFamily="@font/russo_one"
+                android:text="Get More JPoints! (+20J)" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/russo_one"
+                android:gravity="center_horizontal"
+                android:text="You can buy JPoints if you do not want earn them."
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/jblue" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/russo_one"
+                android:gravity="center_horizontal"
+                android:text="$0.99 for +30J and $4.99 for +180J (+30J bonus when you choose $4.99)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/jblue" />
+
+            <Button
+                android:id="@+id/buypoints1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonborder"
+                android:fontFamily="@font/russo_one"
+                android:text="Buy JPoints For $0.99 (+30J)" />
+
+            <Button
+                android:id="@+id/buypoints2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonborder"
+                android:fontFamily="@font/russo_one"
+                android:text="Buy JPoints For $4.99 (+180J)" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5.0dip"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="14.0dip"
+            android:background="@android:color/transparent" />
+
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/current_points2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="Current JPoints: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/jblue" />
+
+            <TextView
+                android:id="@+id/current_available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="More Points Status: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/jblue" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+</android.support.constraint.ConstraintLayout>

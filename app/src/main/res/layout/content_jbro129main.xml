@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+	<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="26.0dip"
+			android:background="@android:color/transparent" />
+
+
+		<Button
+			android:id="@id/bt1"
+			android:layout_width="357dp"
+			android:layout_height="wrap_content"
+			android:background="@drawable/buttonborder"
+			android:fontFamily="@font/russo_one"
+			android:text="Launch LivePatcher" />
+
+		<TextView
+			android:id="@+id/txt1"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/russo_one"
+			android:gravity="center"
+			android:text="Use 'Launch LivePatcher' to make the mod menu appear."
+			android:textColor="@color/black" />
+
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="26.0dip"
+			android:background="@android:color/transparent" />
+
+		<Button
+			android:id="@id/bt2"
+			android:layout_width="357dp"
+			android:layout_height="wrap_content"
+			android:background="@drawable/buttonborder"
+			android:fontFamily="@font/russo_one"
+			android:text="Launch Game (Mod reset)(-5J)" />
+
+		<TextView
+			android:id="@+id/txt2"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/russo_one"
+			android:gravity="center"
+			android:text="Use 'Launch Modded Game (Mod reset)' to launch the game and clear the patches."
+			android:textColor="@color/black" />
+
+		<TextView
+			android:id="@+id/txt2.5"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/russo_one"
+			android:gravity="center"
+			android:text="Close 'Live Patcher' BEFORE launching the game to avoid any issues."
+			android:textColor="@color/black" />
+
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="26.0dip"
+			android:background="@android:color/transparent" />
+
+
+		<Button
+			android:id="@+id/bt8"
+			android:layout_width="357dp"
+			android:layout_height="wrap_content"
+			android:background="@drawable/buttonborder"
+			android:fontFamily="@font/russo_one"
+			android:text="Launch Game (No Mod reset)(-5J)" />
+
+		<TextView
+			android:id="@+id/txt8"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/russo_one"
+			android:gravity="center"
+			android:text="Use 'Launch Modded Game (No Mod reset)' to launch the game without clearing the patches."
+			android:textColor="@color/black" />
+
+		<TextView
+			android:id="@+id/txt8.5"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/russo_one"
+			android:gravity="center"
+			android:text="'Live Patcher' does not need to be closed."
+			android:textColor="@color/black" />
+
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="26.0dip"
+			android:background="@android:color/transparent" />
+
+		<Button
+			android:id="@+id/bt7"
+			android:layout_width="357dp"
+			android:layout_height="wrap_content"
+			android:background="@drawable/buttonborder"
+			android:fontFamily="@font/russo_one"
+			android:text="Launch Game (No Mods)(-5J)" />
+
+		<TextView
+			android:id="@+id/txt7"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/russo_one"
+			android:gravity="center"
+			android:text="Use 'Launch Game (No Mods)' to launch the game without mods."
+			android:textColor="@color/black" />
+
+		<TextView
+			android:id="@+id/txt7.5"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/russo_one"
+			android:gravity="center"
+			android:text="Close 'Live Patcher' BEFORE launching the game to avoid any issues."
+			android:textColor="@color/black" />
+
+
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="26.0dip"
+			android:background="@android:color/transparent" />
+
+		<Button
+			android:id="@id/bt5"
+			android:layout_width="357dp"
+			android:layout_height="wrap_content"
+			android:background="@drawable/buttonborder"
+			android:fontFamily="@font/russo_one"
+			android:text="Remove Patches" />
+
+		<TextView
+			android:id="@+id/txt5"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/russo_one"
+			android:gravity="center"
+			android:text="Use 'Remove Patches' to reset all the mods and switches."
+			android:textColor="@color/black" />
+
+		<TextView
+			android:id="@+id/txt5.5"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/russo_one"
+			android:gravity="center"
+			android:text="Press after you exit the game so the next time you open the mod menu you will not have problems with the switches or mods being stuck on/off."
+			android:textColor="@color/black" />
+
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="26.0dip"
+			android:background="@android:color/transparent" />
+
+		<Button
+			android:id="@id/bt3"
+			android:layout_width="357dp"
+			android:layout_height="wrap_content"
+			android:background="@drawable/buttonborder"
+			android:fontFamily="@font/russo_one"
+			android:text="Add Everything(-8J)" />
+
+		<TextView
+			android:id="@+id/txt3"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/russo_one"
+			android:gravity="center"
+			android:text="Use 'Add Everything' to get everything added to the current account."
+			android:textColor="@color/black" />
+
+		<TextView
+			android:id="@+id/txt3.5"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/russo_one"
+			android:gravity="center"
+			android:text="Adds all weapons, pets, gadgets, wears, and lobby items."
+			android:textColor="@color/black" />
+
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="26.0dip"
+			android:background="@android:color/transparent" />
+
+		<Button
+			android:id="@id/bt4"
+			android:layout_width="357dp"
+			android:layout_height="wrap_content"
+			android:background="@drawable/buttonborder"
+			android:fontFamily="@font/russo_one"
+			android:text="Clear All Data" />
+
+		<TextView
+			android:id="@+id/txt4"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/russo_one"
+			android:gravity="center"
+			android:text="Use 'Clear All Data' button to erase all app data,"
+			android:textColor="@color/black" />
+
+		<TextView
+			android:id="@+id/txt4.5"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/russo_one"
+			android:gravity="center"
+			android:text="useful for if you want to reboot PG3D."
+			android:textColor="@color/black" />
+
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="26.0dip"
+			android:background="@android:color/transparent" />
+
+		<Button
+			android:id="@+id/bt6"
+			android:layout_width="357dp"
+			android:layout_height="wrap_content"
+			android:background="@drawable/buttonborder"
+			android:fontFamily="@font/russo_one"
+			android:text="Clear PG3D Data" />
+
+		<TextView
+			android:id="@+id/txt6"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/russo_one"
+			android:gravity="center"
+			android:text="Use 'Clear PG3D Data' button to erase all modded game data,"
+			android:textColor="@color/black" />
+
+		<TextView
+			android:id="@+id/txt6.5"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:fontFamily="@font/russo_one"
+			android:gravity="center"
+			android:text="useful for if you get banned or if you want to start over."
+			android:textColor="@color/black" />
+
+		<TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+	</LinearLayout>
+</android.support.constraint.ConstraintLayout>
