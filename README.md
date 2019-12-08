@@ -20,4 +20,4 @@ These are some files in this project that you should check out.
 This project is for the old PG3D version 15.3.0. The offsets and
 code provided will **not** work on any other version.
 
-**This project has been discontinued and is longer being maintained.**
+**The PG3D Launcher has been discontinued and is longer being maintained.**
