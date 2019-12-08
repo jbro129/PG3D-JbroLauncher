@@ -15,7 +15,8 @@ These are some files in this project that you should check out.
 
 *Some code has been removed for security purposes.*
 
-**The offsets and code provided within this repository were published for educational purposes.**
+**The offsets and code provided within this repository were published for educational purposes.** I wanted to contribute some of my modding knowledge to the modding community. No better way to do that than make my old launcher open source. This might inspire someone to make a launcher for another app using the same techniques I used to make this one.
+
 This project is for the old PG3D version 15.3.0. The offsets and
 code provided will **not** work on any other version.
 
