@@ -334,6 +334,13 @@ public class Loader
     @QVMProtect
     public static void unityads(RandomAccessFile paramRandomAccessFile)
     {
+        
+        /*
+            PG3D uses an external library to check to see if its being ran from within a virtual environment.
+         
+            https://github.com/ysrc/AntiVirtualApp
+        */
+        
         raf2 = paramRandomAccessFile;
         write2nd(formatOffset("1896"), "01 24");
         write2nd(formatOffset("1624"), "01 20 70 47");
@@ -1479,43 +1486,43 @@ public class Loader
                 Loader.write(formatOffset("0x1323B6C"), "30 48 2D E9 08 B0 8D E2"); // ClansController$$get_LevelOpenClans
             }
         });/*
-    addSwitch("All Fort Items", new CompoundButton.OnCheckedChangeListener()
-    {
-      public void onCheckedChanged(CompoundButton paramAnonymousCompoundButton, boolean paramAnonymousBoolean)
-      {
-        if (paramAnonymousBoolean)
+        addSwitch("All Fort Items", new CompoundButton.OnCheckedChangeListener()
         {
-          Loader.write(formatOffset("16209C4"), "01 00 A0 E3 1E FF 2F E1");
-          Loader.write(formatOffset("162868C"), "01 00 A0 E3 1E FF 2F E1");
-          Loader.write(formatOffset("1621A4C"), "88 03 01 E3 1E FF 2F E1");
-          Loader.write(formatOffset("16216D4"), "88 03 01 E3 1E FF 2F E1");
-          Loader.write(formatOffset("1621A90"), "88 03 01 E3 1E FF 2F E1");
-          return;
-        }
-        Loader.write(formatOffset("16209C4"), "70 4C 2D E9 10 B0 8D E2");
-        Loader.write(formatOffset("162868C"), "70 4C 2D E9 10 B0 8D E2");
-        Loader.write(formatOffset("1621A4C"), "10 4C 2D E9 08 B0 8D E2");
-        Loader.write(formatOffset("16216D4"), "70 4C 2D E9 10 B0 8D E2");
-        Loader.write(formatOffset("1621A90"), "70 4C 2D E9 10 B0 8D E2");
-      }
-    });/*
-    addSwitch("Fort Damage God", new CompoundButton.OnCheckedChangeListener()
-    {
-      public void onCheckedChanged(CompoundButton paramAnonymousCompoundButton, boolean paramAnonymousBoolean)
-      {
-        if (paramAnonymousBoolean)
+          public void onCheckedChanged(CompoundButton paramAnonymousCompoundButton, boolean paramAnonymousBoolean)
+          {
+            if (paramAnonymousBoolean)
+            {
+              Loader.write(formatOffset("16209C4"), "01 00 A0 E3 1E FF 2F E1");
+              Loader.write(formatOffset("162868C"), "01 00 A0 E3 1E FF 2F E1");
+              Loader.write(formatOffset("1621A4C"), "88 03 01 E3 1E FF 2F E1");
+              Loader.write(formatOffset("16216D4"), "88 03 01 E3 1E FF 2F E1");
+              Loader.write(formatOffset("1621A90"), "88 03 01 E3 1E FF 2F E1");
+              return;
+            }
+            Loader.write(formatOffset("16209C4"), "70 4C 2D E9 10 B0 8D E2");
+            Loader.write(formatOffset("162868C"), "70 4C 2D E9 10 B0 8D E2");
+            Loader.write(formatOffset("1621A4C"), "10 4C 2D E9 08 B0 8D E2");
+            Loader.write(formatOffset("16216D4"), "70 4C 2D E9 10 B0 8D E2");
+            Loader.write(formatOffset("1621A90"), "70 4C 2D E9 10 B0 8D E2");
+          }
+        });/*
+        addSwitch("Fort Damage God", new CompoundButton.OnCheckedChangeListener()
         {
-          Loader.write(formatOffset("C1A2B4"), "7A 04 44 E3 1E FF 2F E1");
-          Loader.write(formatOffset("13ED258"), "7A 04 44 E3 1E FF 2F E1");
-          Loader.write(formatOffset("13EEB28"), "7A 04 44 E3 1E FF 2F E1");
-          return;
-        }
-        Loader.write(formatOffset("C1A2B4"), "F0 48 2D E9 10 B0 8D E2");
-        Loader.write(formatOffset("13ED258"), "70 4C 2D E9 10 B0 8D E2");
-        Loader.write(formatOffset("13EEB28"), "F0 4B 2D E9 18 B0 8D E2");
-      }
-    });
-    */
+          public void onCheckedChanged(CompoundButton paramAnonymousCompoundButton, boolean paramAnonymousBoolean)
+          {
+            if (paramAnonymousBoolean)
+            {
+              Loader.write(formatOffset("C1A2B4"), "7A 04 44 E3 1E FF 2F E1");
+              Loader.write(formatOffset("13ED258"), "7A 04 44 E3 1E FF 2F E1");
+              Loader.write(formatOffset("13EEB28"), "7A 04 44 E3 1E FF 2F E1");
+              return;
+            }
+            Loader.write(formatOffset("C1A2B4"), "F0 48 2D E9 10 B0 8D E2");
+            Loader.write(formatOffset("13ED258"), "70 4C 2D E9 10 B0 8D E2");
+            Loader.write(formatOffset("13EEB28"), "F0 4B 2D E9 18 B0 8D E2");
+          }
+        });
+        */
         addSwitch("All Guns", new CompoundButton.OnCheckedChangeListener()
         {
             public void onCheckedChanged(CompoundButton paramAnonymousCompoundButton, boolean paramAnonymousBoolean)
@@ -1807,7 +1814,7 @@ public class Loader
         });*/
 
         //addText("=================");
-        addText("");
+	    addReturn();
         addText("Mod Menu Made With <3 By Jbro129 & KMODs");
         //addText("=================");
     }
@@ -1819,19 +1826,31 @@ public class Loader
         //raf = random;
 
     }
+    
+    public static EditText addEditText(String hint) {
+        EditText localEditText = new EditText(ctx);
+        localEditText.setHint(hint);
+        localEditText.setLayoutParams(setParams());
+        localEditText.setFocusableInTouchMode(true);
+        //localEditText.setFocusable(true);
+        patches.addView(localEditText);
+        return localEditText;
+    }
 
-    private static void addSeekbar(int bars, SeekBar.OnSeekBarChangeListener paramOnSeekBarChangeListener)
+    public static SeekBar addSeekbar(int bars, SeekBar.OnSeekBarChangeListener paramOnSeekBarChangeListener)
     {
         SeekBar localSeekBar = new SeekBar(ctx);
         localSeekBar.setMax(bars);
-        localSeekBar.setThumb(ctx.getResources().getDrawable(R.drawable.j));
+        //localSeekBar.setThumb(ctx.getResources().getDrawable(R.drawable.j));
         localSeekBar.setLayoutParams(setParams());
         localSeekBar.setOnSeekBarChangeListener(paramOnSeekBarChangeListener);
         patches.addView(localSeekBar);
+		return localSeekBar;
     }
 
+
     @SuppressLint({"ResourceType"})
-    private static void addSpinner(String name, String[] items, OnItemSelectedListener listener) {
+    public static Spinner addSpinner(String name, String[] items, AdapterView.OnItemSelectedListener listener) {
         TextView tv = new TextView(ctx);
         tv.setText(name);
         tv.setTextSize(txtSize);
@@ -1845,32 +1864,33 @@ public class Loader
         sp.setOnItemSelectedListener(listener);
         patches.addView(tv);
         patches.addView(sp);
+		return sp;
     }
 
-    @SuppressLint("NewApi")
-    private static void addSwitch(String name, OnCheckedChangeListener listener)
+    //@SuppressLint("NewApi")
+    public static Switch addSwitch(String name, CompoundButton.OnCheckedChangeListener listener)
     {
         final Switch sw = new Switch(ctx);
         sw.setText(name);
         sw.setTextSize(txtSize);
         sw.setTextColor(txtColor);
-        if(VERSION.SDK_INT >= 16)
+        if(Build.VERSION.SDK_INT >= 16)
         {
-            sw.getThumbDrawable().setColorFilter(swOff, Mode.MULTIPLY);
+            sw.getThumbDrawable().setColorFilter(swOff, PorterDuff.Mode.MULTIPLY);
         }
-        sw.setOnClickListener(new OnClickListener()
+        sw.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View view)
             {
-                if(VERSION.SDK_INT >= 16)
+                if(Build.VERSION.SDK_INT >= 16)
                 {
                     if(sw.isChecked())
                     {
-                        sw.getThumbDrawable().setColorFilter(swOn, Mode.MULTIPLY);
+                        sw.getThumbDrawable().setColorFilter(swOn, PorterDuff.Mode.MULTIPLY);
                     }
                     else
                     {
-                        sw.getThumbDrawable().setColorFilter(swOff, Mode.MULTIPLY);
+                        sw.getThumbDrawable().setColorFilter(swOff, PorterDuff.Mode.MULTIPLY);
                     }
                 }
             }
@@ -1878,27 +1898,50 @@ public class Loader
         sw.setOnCheckedChangeListener(listener);
         sw.setLayoutParams(setParams());
         patches.addView(sw);
+		return sw;
     }
 
-    private static void addButton(String name, OnClickListener listener)
+    public static CheckBox addCheckBox(String name, View.OnClickListener listener)
+    {
+        final CheckBox check = new CheckBox(ctx);
+        check.setText(name);
+        check.setTextSize(txtSize);
+        check.setTextColor(txtColor);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+        {
+            check.setTextAppearance(Gravity.CENTER);
+        }
+        check.setOnClickListener(listener);
+        check.setLayoutParams(setParams());
+        patches.addView(check);
+		return check;
+    }
+
+    public static Button addButton(String name, View.OnClickListener listener)
     {
         final Button but = new Button(ctx);
         but.setText(name);
         but.setTextSize(txtSize);
         but.setTextColor(txtColor);
-        if (VERSION.SDK_INT >= Build.VERSION_CODES.M)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
         {
             but.setTextAppearance(Gravity.CENTER);
         }
         but.setOnClickListener(listener);
         but.setLayoutParams(setParams());
         patches.addView(but);
+		return but;
     }
 
-    private static TextView addText(String paramString)
+    public static void addReturn()
+    {
+        addText(" ");
+    }
+
+    public static TextView addText(String txt)
     {
         TextView localTextView = new TextView(ctx);
-        localTextView.setText(paramString);
+        localTextView.setText(txt);
         localTextView.setTextColor(txtColor);
         localTextView.setTextSize(txtSize);
         localTextView.setLayoutParams(setParams());
@@ -1906,10 +1949,10 @@ public class Loader
         return localTextView;
     }
 
-    private static TextView addText(String paramString, int color)
+    public static TextView addText(String txt, int color)
     {
         TextView localTextView = new TextView(ctx);
-        localTextView.setText(paramString);
+        localTextView.setText(txt);
         localTextView.setTextColor(color);
         localTextView.setTextSize(txtSize);
         localTextView.setLayoutParams(setParams());
@@ -1917,10 +1960,10 @@ public class Loader
         return localTextView;
     }
 
-    private static TextView addText(String paramString, float size)
+    public static TextView addText(String txt, float size)
     {
         TextView localTextView = new TextView(ctx);
-        localTextView.setText(paramString);
+        localTextView.setText(txt);
         localTextView.setTextColor(txtColor);
         localTextView.setTextSize(size);
         localTextView.setLayoutParams(setParams());
@@ -1928,10 +1971,10 @@ public class Loader
         return localTextView;
     }
 
-    private static TextView addText(String paramString, float size, int color)
+    public static TextView addText(String txt, float size, int color)
     {
         TextView localTextView = new TextView(ctx);
-        localTextView.setText(paramString);
+        localTextView.setText(txt);
         localTextView.setTextColor(color);
         localTextView.setTextSize(size);
         localTextView.setLayoutParams(setParams());
