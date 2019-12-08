@@ -16,7 +16,7 @@ public class Constants
 
     public static final String JBRO_PATH = Environment.getExternalStorageDirectory().getAbsolutePath() + "/JbroPG3D/";
 
-    public static final String SUPPORT_EMAIL = "jbropg3dlaunchersupp@gmail.com";
+    public static final String SUPPORT_EMAIL = "jbropg3dlaunchersupp@gmail.com"; // gmail account deleted
 
     @QVMProtect
     public final static String PASSWORD = "REMOVED";
