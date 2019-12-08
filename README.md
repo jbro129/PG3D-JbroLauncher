@@ -1,4 +1,4 @@
-# Jbro129's Old PG3D Launcher App
+# PG3D-JbroLauncher
 For PG3D v15.3.0
 
 ## Important Files
