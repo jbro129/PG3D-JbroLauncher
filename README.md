@@ -1,6 +1,8 @@
 # PG3D-JbroLauncher
 For PG3D v15.3.0
 
+This project was created with [Android Studio](https://developer.android.com/studio).
+
 ## Important Files
 These are some files in this project that you should check out.
 
